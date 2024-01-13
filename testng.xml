@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="/Users/omarhany/IdeaProjects/Phase5Offilne">
+    <test name="Test Condition">
         <classes>
-            <class name="login.LoginTests">
-                <methods>
-                    <include name="testSuccessfulLogin"/>
-                    <include name="testInvalidUsername"/>
-                    <include name="testInvalidPassword"/>
-                </methods>
-            </class>
+            <class name="login.LoginTests"/>
+            <class name="upload.UploadTests"/>
+            <class name="checkBox.CheckBoxTests"/>
+            <class name="wait.DynamicLoadingTests"/>
+            <class name="dropdown.DropdownTests"/>
         </classes>
     </test>
+
+
 </suite>
