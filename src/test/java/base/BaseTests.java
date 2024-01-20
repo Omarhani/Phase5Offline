@@ -8,7 +8,7 @@ import pages.HomePage;
 
 public class BaseTests {
     protected static WebDriver driver;
-    protected HomePage homePage;
+    protected static HomePage homePage;
     @BeforeTest
     public void setUp(){
         driver = new ChromeDriver();

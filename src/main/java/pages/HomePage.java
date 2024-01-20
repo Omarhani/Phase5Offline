@@ -21,6 +21,10 @@ public class HomePage {
 
     private final By dropdownLink = By.linkText("Dropdown");
 
+    private final By jsAlertsLink = By.linkText("JavaScript Alerts");
+
+    private final By WYSIWYGEditorLink = By.linkText("WYSIWYG Editor");
+
     private void clickOnLink(By locator){
         driver.findElement(locator).click();
     }
@@ -43,6 +47,15 @@ public class HomePage {
     public DropdownPage clickOnDropdownLink(){
         clickOnLink(dropdownLink);
         return new DropdownPage(driver);
+    }
+
+    public JSAlertPage clickOnJSAlertLink(){
+        clickOnLink(jsAlertsLink);
+        return new JSAlertPage(driver);
+    }
+    public WYSIWYGEditorPage clickOnWYSIWYGEditorLink(){
+        clickOnLink(WYSIWYGEditorLink);
+        return new WYSIWYGEditorPage(driver);
     }
     public void addBorderToElement(WebDriver driver, WebElement element) {
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
